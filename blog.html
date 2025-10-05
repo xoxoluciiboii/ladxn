@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LADXN | BLOG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="home.html" class="logo">LADXN</a>
+            <ul class="nav-links">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="music.html">MUSIC</a></li>
+                <li><a href="shows.html">SHOWS</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="blog.html" class="active">BLOG</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-spotify"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="cart-icon" id="cart-toggle">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="content-section">
+        <h2 class="section-title">DYNASTY BLOG</h2>
+        <div class="music-grid">
+            <div class="music-card">
+                <div class="image-placeholder small">
+                    <i class="fas fa-newspaper"></i>
+                </div>
+                <h3>NEW ALBUM IN PRODUCTION</h3>
+                <p>Get the latest updates on the upcoming album and behind-the-scenes looks at the creative process.</p>
+                <button class="btn blog-btn" data-article="album">READ MORE</button>
+            </div>
+            <div class="music-card">
+                <div class="image-placeholder small">
+                    <i class="fas fa-video"></i>
+                </div>
+                <h3>BEHIND THE SCENES: Destiny</h3>
+                <p>Exclusive look at the making of the Destiny music video and the creative vision behind it.</p>
+                <button class="btn blog-btn" data-article="video">READ MORE</button>
+            </div>
+            <div class="music-card">
+                <div class="image-placeholder small">
+                    <i class="fas fa-ticket-alt"></i>
+                </div>
+                <h3>UPCOMING TOUR ANNOUNCEMENT</h3>
+                <p>Details about the upcoming Dynasty Tour, including cities, dates, and special guests.</p>
+                <button class="btn blog-btn" data-article="tour">READ MORE</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="social-links">
+            <a href="#">INSTAGRAM</a>
+            <a href="#">SPOTIFY</a>
+            <a href="#">YOUTUBE</a>
+            <a href="#">TIKTOK</a>
+            <a href="#">TWITTER</a>
+        </div>
+        <p class="footer-text">&copy; 2023 PALADINS DYNASTY. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>YOUR CART</h2>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-total" id="cart-total">Total: $0.00</div>
+        <button class="checkout-btn" id="checkout-btn">PROCEED TO CHECKOUT</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LADXN | HOME</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="home.html" class="logo">LADXN</a>
+            <ul class="nav-links">
+                <li><a href="home.html" class="active">HOME</a></li>
+                <li><a href="music.html">MUSIC</a></li>
+                <li><a href="shows.html">SHOWS</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-spotify"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="cart-icon" id="cart-toggle">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>WELCOME TO THE DYNASTY</h1>
+        <p>Experience the sound that's taking over the world. New music, exclusive merch, and unforgettable shows.</p>
+    </section>
+
+    <!-- Latest Music -->
+    <section class="content-section">
+        <h2 class="section-title">LATEST RELEASES</h2>
+        <div class="music-grid">
+            <div class="music-card">
+                <div class="image-placeholder">
+                    <i class="fas fa-compact-disc"></i>
+                </div>
+                <h3>Big Steppa</h3>
+                <p>Latest Single - Out Now</p>
+                <div class="stream-links">
+                    <button class="btn stream-btn" data-platform="spotify">Spotify</button>
+                    <button class="btn btn-purple stream-btn" data-platform="apple">Apple Music</button>
+                </div>
+            </div>
+            <div class="music-card">
+                <div class="image-placeholder">
+                    <i class="fas fa-volume-up"></i>
+                </div>
+                <h3>Visionary</h3>
+                <p>Coming Soon</p>
+                <div class="stream-links">
+                    <button class="btn stream-btn" data-platform="presave">Pre-Save</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <h2>JOIN THE DYNASTY</h2>
+        <p>Get exclusive updates, early access to tickets, and special offers.</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn">SUBSCRIBE</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="social-links">
+            <a href="#">INSTAGRAM</a>
+            <a href="#">SPOTIFY</a>
+            <a href="#">YOUTUBE</a>
+            <a href="#">TIKTOK</a>
+            <a href="#">TWITTER</a>
+        </div>
+        <p class="footer-text">&copy; 2023 THE PALADINS DYNASTY. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>YOUR CART</h2>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-total" id="cart-total">Total: $0.00</div>
+        <button class="checkout-btn" id="checkout-btn">PROCEED TO CHECKOUT</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

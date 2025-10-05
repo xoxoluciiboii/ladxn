@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LADXN | SHOWS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="home.html" class="logo">LADXN</a>
+            <ul class="nav-links">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="music.html">MUSIC</a></li>
+                <li><a href="shows.html" class="active">SHOWS</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-spotify"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="cart-icon" id="cart-toggle">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="content-section">
+        <h2 class="section-title">UPCOMING SHOWS</h2>
+        <body>
+		NO SHOWS OR TOURS IN progress
+		</body>
+
+    <footer class="main-footer">
+        <div class="social-links">
+            <a href="#">INSTAGRAM</a>
+            <a href="#">SPOTIFY</a>
+            <a href="#">YOUTUBE</a>
+            <a href="#">TIKTOK</a>
+            <a href="#">TWITTER</a>
+        </div>
+        <p class="footer-text">&copy; 2023 PALADINS DYNASTY. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>YOUR CART</h2>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-total" id="cart-total">Total: $0.00</div>
+        <button class="checkout-btn" id="checkout-btn">PROCEED TO CHECKOUT</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

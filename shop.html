@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LADXN | SHOP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="home.html" class="logo">LADXN</a>
+            <ul class="nav-links">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="music.html">MUSIC</a></li>
+                <li><a href="shows.html">SHOWS</a></li>
+                <li><a href="shop.html" class="active">SHOP</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-spotify"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="cart-icon" id="cart-toggle">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="content-section">
+        <h2 class="section-title">DYNASTY MERCH</h2>
+        <div class="shop-grid">
+            <div class="shop-item">
+                <div class="image-placeholder">
+                    <i class="fas fa-tshirt"></i>
+                </div>
+                <h3>NEON SIGNATURE TEE</h3>
+                <div class="price">$35.00</div>
+                <button class="btn buy-button" data-item="Neon Signature Tee" data-price="35">ADD TO CART</button>
+            </div>
+            <div class="shop-item">
+                <div class="image-placeholder">
+                    <i class="fas fa-hoodie"></i>
+                </div>
+                <h3>DYNASTY HOODIE</h3>
+                <div class="price">$65.00</div>
+                <button class="btn buy-button" data-item="Dynasty Hoodie" data-price="65">ADD TO CART</button>
+            </div>
+            <div class="shop-item">
+                <div class="image-placeholder">
+                    <i class="fas fa-compact-disc"></i>
+                </div>
+                <h3>LIMITED EDITION VINYL</h3>
+                <div class="price">$45.00</div>
+                <button class="btn buy-button" data-item="Limited Edition Vinyl" data-price="45">ADD TO CART</button>
+            </div>
+            <div class="shop-item">
+                <div class="image-placeholder">
+                    <i class="fas fa-hat-cowboy"></i>
+                </div>
+                <h3>DYNASTY SNAPBACK</h3>
+                <div class="price">$30.00</div>
+                <button class="btn buy-button" data-item="Dynasty Snapback" data-price="30">ADD TO CART</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="social-links">
+            <a href="#">INSTAGRAM</a>
+            <a href="#">SPOTIFY</a>
+            <a href="#">YOUTUBE</a>
+            <a href="#">TIKTOK</a>
+            <a href="#">TWITTER</a>
+        </div>
+        <p class="footer-text">&copy; 2023 PALADINS DYNASTY. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>YOUR CART</h2>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-total" id="cart-total">Total: $0.00</div>
+        <button class="checkout-btn" id="checkout-btn">PROCEED TO CHECKOUT</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
